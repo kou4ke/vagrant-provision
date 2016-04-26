@@ -1,0 +1,4 @@
+# file: development.yml
+- hosts: development
+  roles:
+    - user
