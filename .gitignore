@@ -1,1 +1,3 @@
 .vagrant/
+ansible/roles/user/files/id_*
+ansible/roles/user/files/authorized_keys
