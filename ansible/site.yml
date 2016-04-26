@@ -1,1 +1,4 @@
-- include: development_servers.yml
+# file: development.yml
+- hosts: development
+  roles:
+    - common

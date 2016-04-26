@@ -1,0 +1,14 @@
+- name: developer group
+  user: name=developer
+
+- name: user add 
+  user: name=kou4ke shell=/bin/bash groups=developer
+
+- name: add ssh privete key
+  copy: src=id_rsa_dev dest=/home/kou4ke/.ssh/ owner=kou4ke group=developer mode=0600
+
+- name: add ssh public key
+  copy: src=id_rsa_dev.pub dest=/home/kou4ke/.ssh/ owner=kou4ke group=developer mode=0644
+
+- name: add authorized_keys
+  copy: src=authorized_keys dest=/home/kou4ke/.ssh/ owner=kou4ke group=developer mode=0600
