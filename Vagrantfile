@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # config.vm.network "public_network"
 
-  config.vm.synced_folder "./ansible", ANSIBLE_TMP_DIR, type: "rsync", owner: "vagrant", mount_options: ['dmode=777','fmode=755']
+  # config.vm.synced_folder "./ansible", ANSIBLE_TMP_DIR, type: "rsync", owner: "vagrant", mount_options: ['dmode=777','fmode=755']
 
   # config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
